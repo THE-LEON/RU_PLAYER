@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+#skip{
+    position: fixed;
+    bottom: 10px;
+    right: 5vw;
+    background-color: #000000dd;
+    padding: 5px 10px 2px 10px;
+    border-radius: 5px;
+}
+#skip div{
+    float: left;
+}
+.aud_player{
+    width: 60%; /*you can set you custom width*/
+    background-color: #000000dd;
+    border-radius: 7px;
+    height: 30px;
+    padding-left: 1px;
+    display: flex;
+    align-items: center;
+    overflow: hidden; /*you can delete this line if you want*/
+}
+.aud_player div{
+    float: left;
+    margin: 0 5px 0 5px;
+}
+.aud_player input{
+    float: left;
+    margin: 0;
+}
+.aud_vol_cl{
+    width: 20%;
+}
+
+
+
+.aud_text{
+    color: #969696;
+    font-family: 'Nunito';
+}
+.slider-container {
+position: relative;
+width: 100%;
+min-width: 35%;
+}
+
+body .slider-container2 {
+position: relative;
+width: 15%;
+min-width: 15%;
+}
+.slider-container .bar {
+right: 0;
+position: absolute;
+z-index: 1;
+width: 100%;
+height: 10px;
+border-radius: 5px;
+background-color: #444444;
+overflow: hidden;
+}
+.slider-container .bar .fill {
+display: block;
+width: 0%;
+height: 100%;
+background-color: red;
+margin-left: -5px;
+}
+.slider-container .bar .fill2 {
+display: block;
+width: 100%;
+height: 100%;
+background-color: #969696;
+margin-left: -5px;
+}
+.pr_fill{
+display: block;
+position: absolute;
+width: 5px;
+height: 100%;
+background-color: red;
+}
+.pr_fill2{
+background-color: #969696;
+
+}
+.slider-container .slider {
+position: relative;
+z-index: 2;
+-webkit-appearance: none;
+width: 100%;
+height: 10px;
+border-radius: 5px;
+outline: none;
+background-color: transparent;
+}
+body .slider-container .slider2::-moz-range-thumb {
+background-color: #969696;
+box-shadow: 0 0 0 0 rgba(230, 230, 230, 0.1);
+
+}
+.slider-container .slider::-moz-range-thumb  {
+border: none;
+-webkit-appearance: none;
+width: 10px;
+height: 10px;
+background-color: red;
+border-radius: 50%;
+cursor: pointer;
+outline: none;
+box-shadow: 0 0 0 0 rgba(238, 0, 0, 0.1);
+transition: .3s ease-in-out;
+}
+.slider-container .slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+width: 10px;
+height: 10px;
+background-color: red;
+border-radius: 50%;
+cursor: pointer;
+outline: none;
+box-shadow: 0 0 0 0 rgba(238, 0, 0, 0.1);
+transition:/*made by RAL*/ .3s ease-in-out;
+}.slider-container .slider2::-webkit-slider-thumb {
+background-color: #969696;
+box-shadow: 0 0 0 0 rgba(230, 230, 230, 0.1);
+}
+.slider-container .slider::-webkit-slider-thumb:hover {
+box-shadow: 0 0 0 5px rgba(238, 0, 0, 0.1);
+}
+.slider-container .slider:active::-webkit-slider-thumb {
+box-shadow: 0 0 0 10px rgba(238, 0, 0, 0.2);
+}
+.slider-container .slider2::-webkit-slider-thumb:hover {
+box-shadow: 0 0 0 5px rgba(235, 235, 235, 0.1);
+}
+.slider-container .slider2:active::-webkit-slider-thumb {
+box-shadow: 0 0 0 10px rgba(226, 226, 226, 0.2);
+}body .slider-container .slider2::-moz-range-thumb {
+background-color: #969696;
+box-shadow: 0 0 0 0 rgba(230, 230, 230, 0.1);
+}
+.slider-container .slider::-moz-range-thumb:hover {
+box-shadow: 0 0 0 5px rgba(238, 0, 0, 0.1);
+}
+.slider-container .slider:active::-moz-range-thumb {
+box-shadow: 0 0 0 10px rgba(238, 0, 0, 0.2);
+}
+body .slider-container .slider2::-moz-range-thumb:hover {
+box-shadow: 0 0 0 5px rgba(235, 235, 235, 0.1);
+}
+body .slider-container .slider2:active::-moz-range-thumb {
+box-shadow: 0 0 0 10px rgba(226, 226, 226, 0.2);
+}
+.aud_player img{
+    height: 40px;
+    margin-top: 3px;
+    border-radius: 5px;
+}
