@@ -126,6 +126,8 @@ setBar();
             function aud_next(){
                 for(let i = 0;i < arr.length;i++){
                     if((!arr[i].paused) && arr[i+1]){
+                        let aud_track = localStorage.getItem("aud_track");
+                        localStorage.setItem("aud_track",(parseInt(aud_track)+1));
                         arr[i+1].play();
                         arr[i+1].parentNode.children[2].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ff0000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
                         arr[i].pause();
@@ -137,6 +139,9 @@ setBar();
                 for(let i = arr.length-1;i >= 0;i--){
                 if(arr[i].currentTime < 3){
                     if((!arr[i].paused) && arr[i-1]){
+                        
+                        let aud_track = localStorage.getItem("aud_track");
+                        localStorage.setItem("aud_track",(parseInt(aud_track)-1));
                         arr[i-1].play();
                         arr[i-1].parentNode.children[2].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ff0000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
                         arr[i].pause();
@@ -209,7 +214,7 @@ function aud_space(){
                 arr[parseInt(aud_track)].parentNode.children[2].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ff0000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M10 8.64L15.27 12 10 15.36V8.64M8 5v14l11-7L8 5z"/></svg>';
                 arr[parseInt(aud_track)+1].play();
                 arr[parseInt(aud_track)+1].parentNode.children[2].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ff0000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
-            localStorage.setItem("aud_track",(aud_track+1));
+            localStorage.setItem("aud_track",(parseInt(aud_track)+1));
 
             }
             }
