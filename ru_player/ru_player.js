@@ -266,4 +266,4 @@ function aud_space(){
         }}
             sizing()
 
-            document.getElementsByClassName("aud_player")[0].children[1].oncanplay = setTimeout(auto_onload,500);
+            document.addEventListener("DOMContentLoaded", auto_onload); 
