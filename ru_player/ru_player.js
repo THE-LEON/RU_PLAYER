@@ -266,4 +266,4 @@ function aud_space(){
         }}
             sizing()
 
-            document.addEventListener("DOMContentLoaded", auto_onload); 
+            //document.addEventListener("DOMContentLoaded", auto_onload); 
