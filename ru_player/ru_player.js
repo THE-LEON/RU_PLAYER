@@ -266,4 +266,4 @@ function aud_space(){
         }}
             sizing()
 
-            auto_onload();
+            document.getElementsByClassName("aud_player")[0].children[1].oncanplay(auto_onload());
